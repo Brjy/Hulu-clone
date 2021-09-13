@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Rubik", sans-serif;
+  background: #000;
+  color: #fff;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+:root {
+  --main-color: #1ce783;
+  --font-s: 13px;
+  --font-r: 16px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+h3 {
+  color: var(--main-color);
+  text-transform: uppercase;
+  font-size: var(--font-s);
+}
+img {
+  width: 100%;
+}
+.btn {
+  text-transform: uppercase;
+  padding: 20px 40px;
+  font-size: var(--font-r);
+  font-weight: 600;
+  color: #303030;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.header {
+  height: 85vh;
+  background: url(../img/header.jpg) no-repeat center center/cover;
+}
+.header nav {
+  text-align: right;
+  padding: 20px 40px;
+  position: relative;
+}
+.header nav a {
+  position: relative;
+  z-index: 3;
+}
+.header nav::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 15.54%,
+    rgba(0, 0, 0, 0.192) 60.23%,
+    rgba(0, 0, 0, 8e-5) 100%
+  );
+}
+.header .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60vh;
+  text-align: center;
+}
+.content img {
+  width: 250px;
+}
+.content .description {
+  font-size: 20px;
+  font-weight: bold;
+}
+.content .details {
+  font-size: 18px;
+}
+.legal {
+  font-size: 10px;
+  color: rgb(150, 150, 150);
+}
+.sub-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  padding: 30px 40px;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient(
+    318.68deg,
+    #0f495c 0%,
+    #0d3640 49.72%,
+    #08141f 100%
+  );
+}
+.sub-header p {
+  font-size: 25px;
+  font-weight: 300;
+}
+.sub-header .legal {
+  font-size: 12px;
+  text-decoration: underline;
+  text-transform: none;
+}
+.btn-bundle {
+  display: block;
+  text-transform: uppercase;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  outline: none;
+  border: solid white 2px;
+  padding: 20px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-bundle:hover {
+  border-color: rgb(219, 219, 219);
+}
+.sub-header div:last-of-type {
+  justify-self: end;
+  text-align: center;
+}
+
+.catigory {
+  margin-top: 100px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title h1 {
+  font-size: 70px;
+}
+.title {
+  text-align: center;
+}
+.title-p {
+  font-size: 25px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.plans {
+  margin-top: 50px;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.plans .cover {
+  height: 500px;
+  width: 300px;
+  padding: 20px 15px;
+  position: relative;
+}
+.plans .text {
+  position: relative;
+  z-index: 2;
+}
+.plans .grad {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.plans .cover:nth-child(1) {
+  background: url(../img/cover-1.jpg) no-repeat center center/cover;
+}
+.plans .cover:nth-child(2) {
+  background: url(../img/cover-2.jpg) no-repeat center center/cover;
+}
+.plans .cover:nth-child(3) {
+  background: url(../img/cover-3.jpg) no-repeat center center/cover;
+}
+.plans .cover:nth-child(4) {
+  background: url(../img/cover-4.jpg) no-repeat center center/cover;
+}
+
+.live-banner {
+  margin-top: 80px;
+  padding: 40px;
+  background-color: #151516;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: solid 5px var(--main-color);
+  padding: 100px;
+  border-radius: 15px;
+}
+.banner p {
+  margin-bottom: 20px;
+}
+.banner a {
+  text-decoration: underline;
+}
+
+.live-sport {
+  background: url(../img/live-sports.jpg) no-repeat center center/cover;
+  position: relative;
+  height: 800px;
+}
+.sport {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  max-width: 550px;
+}
+.sport h2 {
+  font-size: 70px;
+}
+.sport .sport-p {
+  font-size: 24px;
+}
+.channels {
+  margin: 40px 0;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.channels > div {
+  background: url(../img/network-logo-bg.png) no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+.sport .legal {
+  color: #fff;
+}
+.channel img {
+  width: 40px;
+}
+.foot {
+  background-color: #ebedf2;
+}
+.foot-items {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 10px;
+  color: #333;
+}
+.foot-items .lists {
+  display: flex;
+  justify-content: space-between;
+}
+.lists ul {
+  list-style: none;
+}
+.lists ul .list-title {
+  color: black;
+  font-weight: bold;
+}
+.lists ul li a {
+  color: #333;
+}
+.foot-items hr {
+  margin: 20px 0;
+}
+.socials img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+}
+/* mediaaaaa */
+@media (max-width: 1100px) {
+  .plans {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .live-sport {
+    background: url(../img/live-sports-small.jpg) no-repeat center center/cover;
+  }
+  .sport {
+    top: 30px;
+    left: 30px;
+  }
+  .sport h2 {
+    font-size: 40px;
+  }
+  .sport .sport-p {
+    font-size: 20px;
+  }
+  .foot-items .lists {
+    flex-direction: column;
+  }
+  .banner {
+    padding: 30px 10px;
+  }
+  .content .details {
+    display: none;
+  }
+  .content img {
+    width: 200px;
+  }
+  .sub-header img {
+    max-width: 250px;
+  }
+  .sub-header {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .sub-header div:last-of-type {
+    justify-self: center;
+  }
+  .plans {
+    grid-template-columns: 1fr;
+  }
+  .title p {
+    font-size: 20px;
+  }
+  .title h1 {
+    font-size: 40px;
+  }
+}
